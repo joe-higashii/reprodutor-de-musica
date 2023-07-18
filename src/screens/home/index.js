@@ -7,11 +7,13 @@ import Trending from '../trending';
 import Player from '../player';
 import './home.css';
 import Sidebar from '../../components/sidebar';
+import Login from '../auth/login';
 
 export default function Home() {
     return (
         <Router>
             <div className='main-body'>
+                <Login />
                 <Sidebar />
                 <Routes>
                     <Route path="/library" element={<Library />} />
